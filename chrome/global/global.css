@@ -11,6 +11,12 @@
 					transform: translateY(-10px) !important;
 				}
 
+				@supports not -moz-bool-pref("materialfox-plus.oldversion") {
+					:root[tabsintitlebar][sizemode="maximized"] #TabsToolbar .titlebar-button {
+						transform: translateY(-2px) !important;
+					}
+				}
+
 				.titlebar-button {
 					padding: 10px 17px !important;
 				}
@@ -35,6 +41,12 @@
         		}
       		}
 		}
+	}
+}
+
+@supports not -moz-bool-pref("materialfox-plus.oldversion") {
+	:root[sizemode="maximized"] #titlebar {
+		margin-top: -8px;
 	}
 }
 
