@@ -5,6 +5,7 @@
 
 .findbar-textbox
 {
+	color: var(--lwt-toolbar-field-color) !important;
 	background-color: transparent !important;
 	background-repeat: no-repeat !important;
 	background-position: 5px center !important;
