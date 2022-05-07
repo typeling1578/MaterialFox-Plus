@@ -45,7 +45,7 @@
 }
 
 @supports not -moz-bool-pref("materialfox-plus.oldversion") {
-	:root[sizemode="maximized"] #titlebar {
+	:root[sizemode="maximized"] #TabsToolbar {
 		margin-top: -8px;
 	}
 }
