@@ -1,9 +1,4 @@
-@import "global/variables.css";
-@import "global/global.css";
-@import "icons/icons.css";
-@import "tabbar/tabbar.css";
-@import "navbar/navbar.css";
-@import "personalbar/personalbar.css";
-@import "popup/popup.css";
-@import "urlbar/urlbar.css";
-@import "findbar/findbar.css";
+@import url("global.css");
+@import url("navbar.css");
+@import url("tabbar.css");
+@import url("urlbar.css");

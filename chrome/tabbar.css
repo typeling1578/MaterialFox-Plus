@@ -1,0 +1,101 @@
+#tabbrowser-tabs {
+  --tab-min-height: 35px !important;
+}
+
+:root[sizemode="maximized"] #tabbrowser-tabs {
+  height: 35px !important;
+}
+
+.tabbrowser-tab {
+  padding: 0 !important;
+  overflow: visible !important;
+}
+
+.tabbrowser-tab .tab-background {
+  opacity: 0 !important;
+}
+
+.tabbrowser-tab:not([selected="true"]):hover .tab-background,
+.tabbrowser-tab[multiselected]:not([selected="true"]) .tab-background
+{
+  opacity: 0.1 !important;
+  --tab-bgcolor: #000;
+}
+
+.tabbrowser-tab[visuallyselected] .tab-background {
+  opacity: 1 !important;
+  --tab-bgcolor: var(--toolbar-bgcolor);
+}
+
+.tab-background {
+  background: var(--tab-bgcolor) !important;
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+  border-radius: 8px 8px 0 0 !important;
+  box-shadow: unset !important;
+  outline: 0 !important;
+}
+
+.tab-content {
+  margin-top: 8px !important;
+}
+
+:root[sizemode="maximized"] .tab-background,
+:root[sizemode="maximized"] .tab-content
+{
+  margin-top: 0 !important;
+}
+
+.tab-background:before,
+.tab-background:after
+{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  bottom: 0;
+  pointer-events: none;
+  clip-path: inset(0);
+}
+
+.tab-background::before {
+  border-bottom-right-radius: 8px;
+  left: 0;
+  transform: translate(-8px);
+  box-shadow: 4px 4px 0 4px var(--tab-bgcolor);
+}
+
+.tab-background::after {
+  border-bottom-left-radius: 8px;
+  right: 0;
+  transform: translate(8px);
+  box-shadow: -4px 4px 0 4px var(--tab-bgcolor);
+}
+
+#tabbrowser-arrowscrollbox::part(scrollbox) {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+#tabbrowser-arrowscrollbox::part(overflow-start-indicator),
+#tabbrowser-arrowscrollbox::part(overflow-end-indicator)
+{
+  display: none !important;
+}
+
+#tabbrowser-arrowscrollbox::part(scrollbutton-up),
+#tabbrowser-arrowscrollbox::part(scrollbutton-down)
+{
+  margin-top: 8px !important;
+  border-radius: 99px !important;
+  padding: 6px !important;
+  width: 28px !important;
+  height: 28px !important;
+}
+
+:root[sizemode="maximized"] #tabbrowser-arrowscrollbox::part(scrollbutton-up),
+:root[sizemode="maximized"] #tabbrowser-arrowscrollbox::part(scrollbutton-down)
+{
+  margin-top: 0 !important;
+}

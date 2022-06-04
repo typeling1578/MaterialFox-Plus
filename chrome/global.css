@@ -1,0 +1,8 @@
+:root {
+  --mf-toolbar-height: 36px;
+}
+
+:root {
+  --toolbarbutton-inner-padding: 6px !important;
+  --toolbarbutton-outer-padding: 2px !important;
+}

@@ -1,0 +1,9 @@
+#nav-bar {
+  min-height: var(--mf-toolbar-height) !important;
+  max-height: var(--mf-toolbar-height) !important;
+}
+
+.toolbarbutton-icon {
+  border-radius: 99px !important;
+  transition: background-color 0.3s ease !important;
+}

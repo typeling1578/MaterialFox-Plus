@@ -1,0 +1,87 @@
+#urlbar {
+  --urlbar-height: calc(var(--mf-toolbar-height) - 7px) !important;
+  --urlbar-toolbar-height: var(--mf-toolbar-height) !important;
+  margin-top: calc((var(--mf-toolbar-height) - (var(--mf-toolbar-height) - 7px)) / 2) !important; // 3.5px
+  margin-bottom: calc((var(--mf-toolbar-height) - (var(--mf-toolbar-height) - 7px)) / 2) !important;
+  top: 0 !important;
+  min-height: 0 !important;
+}
+
+#urlbar[open="true"] {
+  --urlbar-toolbar-height: var(--mf-toolbar-height) !important;
+  margin-top: 0 !important;
+}
+
+#urlbar-container {
+  --urlbar-container-height: var(--mf-toolbar-height) !important;
+}
+
+#urlbar-background {
+  border-radius: 99px !important;
+}
+
+#urlbar[open="true"] #urlbar-background {
+  border-radius: 10px !important;
+}
+
+#urlbar-input-container {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+#urlbar[open="true"] #urlbar-input-container {
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.urlbar-page-action {
+  border-radius: 99px !important;
+  padding: 4px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  width: 30px !important;
+}
+
+#identity-box {
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+
+#identity-box:hover {
+  background-color: var(--urlbar-box-hover-bgcolor);
+  color: var(--urlbar-box-hover-text-color);
+  border-radius: 99px !important;
+}
+
+.identity-box-button {
+  border-radius: 99px !important;
+  /*padding: 6px !important;*/
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+  background-color: unset !important;
+  color: unset !important;
+}
+
+#tracking-protection-icon-container {
+  display: none !important;
+}
+
+.urlbarView {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.urlbarView-results {
+  padding: 0 !important;
+}
+
+.urlbarView-row {
+  padding: 0 !important;
+}
+
+.urlbarView-row-inner {
+  height: 25px !important;
+  border-radius: 0 !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
