@@ -38,7 +38,7 @@ menuitem[type=radio] .menu-iconic-icon
 	margin-inline-start: 0 !important;
 }
 
-menupopup::part(content) {
+.menupopup-arrowscrollbox {
 	box-shadow: unset !important;
 	margin: 0 !important;
 }
