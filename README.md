@@ -12,7 +12,7 @@ Inspired by Google's Material Design and their latest Google Chrome UI, this the
 This is a userChrome.css theme, which means you must manually add it to your Firefox profile. The theme overrides certain browser styles. Currently, only the main UI is affected (settings pages, etc. are not). More elements of the UI may be styled in the future but a broader scope becomes harder to maintain as Mozilla updates their browser code so some UI styles may be culled or redone if they become unmaintainable.
 
 ## What version do I use?
-It works with the latest version or 91ESR or 102ESR of Firefox.
+It works with the latest version or 102ESR of Firefox.
 
 ## Installation
 1. [about:config] Set ```toolkit.legacyUserProfileCustomizations.stylesheets``` to ```true``` (default is ```false```).
