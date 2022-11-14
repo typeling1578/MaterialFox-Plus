@@ -275,6 +275,10 @@
 	flex: 1 !important;
 }
 
+#urlbar[breakout-extend="true"] .urlbar-input-box {
+	transform: translateX(-9px) !important;
+}
+
 #urlbar-input
 {
 	width: 100% !important;
